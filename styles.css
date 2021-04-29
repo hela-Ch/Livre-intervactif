@@ -32,3 +32,27 @@ img{
     margin-right: 0.5em;
 }
 
+
+.hidden{
+    display:none;
+}
+
+.visible{
+    display:inline-block;
+}
+span{
+    text-decoration: underline;
+    color:darkmagenta;
+    font-size:0.7em;
+}
+.container  button{
+ border:rgb(79, 47, 63) 1px solid;
+ border-radius: 5px;
+ color:rgb(75, 10, 10);
+}
+.choiceConteneur{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
