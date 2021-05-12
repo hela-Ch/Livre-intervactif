@@ -111,32 +111,13 @@ window.onload= function (){
     //previousButton.classList.replace("visible","hidden") ;
 
   }
-  //let actualId=1;
-  //const previousChaptersId=[1];
-  //configurate the previous Button
- /* function configPreviousButton(idTarget,count){
-    if(idTarget != 1){
-        previousButton.classList.replace("hidden","visible") ;
-        previousChaptersId.push(actualId);
-    }
-    else{
-        previousButton.classList.replace("visible","hidden") 
-    }
-   
-    actualId = idTarget;
-    //console.log(`Button ${previousChaptersId} and prevId ${actualId}`);
-    console.log(previousChaptersId);
-    previousButton.addEventListener("click",function()
-                        { getStory().then(datas =>foundChapter(datas,previousChaptersId.pop()))});
-
-  }*/
+  //event when we click the previous button
   previousButton.addEventListener("click",function()
                         { 
                             console.log(previousChaptersId);
                             previousChaptersId.pop();
                             console.log(previousChaptersId);
-                            displayStoryChapter(previousChaptersId[previousChaptersId.length-1]);
-                            
+                            displayStoryChapter(previousChaptersId[previousChaptersId.length-1]); 
                             
                         }
                             );
